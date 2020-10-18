@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* =================
+     Typography
+================= */
+
+input{
+    margin: .5rem;
+    padding: .5rem 3rem;
+    padding: ;
+}
+input[type=submit]{
+    background-color: rgb(12, 12, 231);
+    color: white;
+    border: none;
+}
+
+/* =================
+       Layout
+================= */
+
+/* formcontainer */
+
+.warning{
+    border: 1px solid red;
+}
+.text-warning{
+    display: block;
+    color:red
+
+}
+.formfield,.todo-lists{
+    width: 100%;
+}
+
+/* todolistcontainer */
+
+ul > li {
+    width: 25rem;
+    list-style: none;
+    padding: .5em;
+    margin-left: -2rem;
+    border: 1px solid #cac8c8cc;
+}
