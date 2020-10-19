@@ -64,7 +64,7 @@ loginButton.addEventListener("click", (e) => {
             // localStorage.setItem('username', username);
             // localStorage.setItem('password', password);
             // Object.values(crediential).map((value)=>console.log(value))
-            // window.location = "./otherpage.html"; 
+            window.location = "./home.html"; 
             let storage = localStorage.getItem("crediential")
             let credientialfromStorage = JSON.parse(storage)
             user.innerText = "Hello " + (credientialfromStorage.username);
@@ -112,6 +112,10 @@ function render(value){
 }
 
 function rendertodolists(todoLists){
+
+       if(inputField){
+
+       }
 
         var inputField = document.createElement("input");
         inputField.setAttribute("type", "text");

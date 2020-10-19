@@ -9,20 +9,29 @@ body{
 
 input{
     margin: .5rem;
-    padding: .5rem 3rem;
-    padding: ;
+    border-radius: .5rem;
 }
 input[type=submit]{
     background-color: rgb(12, 12, 231);
     color: white;
     border: none;
+    border-radius: 0;
 }
 
 /* =================
        Layout
 ================= */
 
+.container{
+    text-align: center;
+    justify-content: center;
+}
+
 /* formcontainer */
+
+.formfield,.todo-lists{
+    width: 100%;
+}
 
 .warning{
     border: 1px solid red;
@@ -32,16 +41,19 @@ input[type=submit]{
     color:red
 
 }
-.formfield,.todo-lists{
-    width: 100%;
-}
 
 /* todolistcontainer */
 
-ul > li {
-    width: 25rem;
+ul#lists {
+    display: table;
+    margin: 0 auto;
+}
+
+ul#lists > li {
+    width: 15rem;
     list-style: none;
     padding: .5em;
     margin-left: -2rem;
     border: 1px solid #cac8c8cc;
+    cursor: pointer;
 }
